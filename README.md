@@ -1,2 +1,3 @@
-# sun-animation
-Just a sumple animation
+# Sun-animation
+Just a simple animation inspired by the google inbox image.
+
