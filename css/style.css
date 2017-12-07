@@ -1,0 +1,87 @@
+.main-container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  width: 400px;
+  height: 400px;
+  position:relative;
+  background:#7BAAF7;
+  border-radius:100%;
+}
+
+.square {
+  width:150px;
+  height:150px;
+  background: linear-gradient(120deg, #F9E294,#E7B439, #7C612B); 
+  position:absolute;
+  top:120px;
+  right:125px;
+/*   transform: rotate(50deg); */
+}
+.second{
+  background-color:#FAE55B;
+  transform: rotate(45deg);
+  background: linear-gradient(120deg, #E7B439, #A58132); 
+}
+
+.circle {
+  position:absolute;
+  background:#FAE65C;
+/*   background: linear-gradient(120deg, #FAE65C 60%, #7C612B); */
+  top:115px;
+  right:117px;
+  border-radius:100%;
+  width:165px;
+  height:165px;
+}
+
+.cloud {
+ 	width: 75px; 
+  height: 20px;
+	background: #fff;
+	border-radius: 100px;
+	position: absolute;
+  top:225px;
+  right:115px;
+  animation: cloudMov 8s infinite;
+  animation-timing-function: linear;
+}
+.trans{
+  top:55px;
+  right:195px;
+  opacity: 0.5;
+  animation: secondCloudMov 16s infinite;
+  animation-timing-function: linear;
+}
+.cloud:after, .cloud:before {
+	content: '';
+	position: absolute;
+	background: #fff;
+}
+.cloud:after {
+	width: 35px; 
+  height: 35px;
+	top: -20px; 
+  right: 10px;
+	border-radius: 100px;
+}
+
+.cloud:before {
+	width: 25px; 
+  height: 25px;
+	top: -15px; 
+  right: 35px;
+	border-radius: 200px;
+}
+
+@keyframes cloudMov {
+    0%   {left:-70px; top:225px;}
+    100% {left:400px; top:225px;}
+}
+@keyframes secondCloudMov {
+    0%   {left:-70px; top:55px;}
+    100% {left:400px; top:55px;}
+}
+
