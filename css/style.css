@@ -18,12 +18,13 @@
   position:absolute;
   top:120px;
   right:125px;
-/*   transform: rotate(50deg); */
+  animation: sunMov 6s infinite linear;
 }
 .second{
   background-color:#FAE55B;
   transform: rotate(45deg);
   background: linear-gradient(120deg, #E7B439, #A58132); 
+  animation: sunMovSec 6s infinite linear;
 }
 
 .circle {
@@ -85,3 +86,9 @@
     100% {left:400px; top:55px;}
 }
 
+@keyframes sunMov {
+ 100% { transform: rotate(360deg)}
+}
+@keyframes sunMovSec {
+ 100% { transform: rotate(405deg)}
+}
